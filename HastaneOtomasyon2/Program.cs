@@ -16,7 +16,7 @@ namespace HastaneOtomasyon2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new HomePage());
+            Application.Run(new Form1());
         }
     }
 }
