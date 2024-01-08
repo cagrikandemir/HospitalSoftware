@@ -52,8 +52,6 @@
             this.btnsil = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.txtara = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnara = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnyenile = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -251,8 +249,8 @@
             "A Rh Negatif",
             "B Rh Pozitif",
             "B Rh Negatif",
-            "A0 Rh Pozitif",
-            "A0 Rh Negatif",
+            "AB Rh Pozitif",
+            "AB Rh Negatif",
             "0 Rh Pozitif",
             "0 Rh Negatif"});
             this.combokangrubu.Location = new System.Drawing.Point(188, 457);
@@ -434,59 +432,20 @@
             this.txtara.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtara.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtara.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtara.Location = new System.Drawing.Point(793, 162);
+            this.txtara.Location = new System.Drawing.Point(966, 162);
             this.txtara.Name = "txtara";
             this.txtara.PasswordChar = '\0';
-            this.txtara.PlaceholderText = "";
+            this.txtara.PlaceholderText = "Hasta Adı Giriniz";
             this.txtara.SelectedText = "";
-            this.txtara.Size = new System.Drawing.Size(245, 36);
+            this.txtara.Size = new System.Drawing.Size(272, 36);
             this.txtara.TabIndex = 30;
-            // 
-            // btnara
-            // 
-            this.btnara.BorderRadius = 10;
-            this.btnara.BorderThickness = 3;
-            this.btnara.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnara.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnara.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnara.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnara.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnara.FillColor = System.Drawing.Color.MintCream;
-            this.btnara.FillColor2 = System.Drawing.Color.Snow;
-            this.btnara.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.btnara.ForeColor = System.Drawing.Color.Black;
-            this.btnara.Location = new System.Drawing.Point(1056, 162);
-            this.btnara.Name = "btnara";
-            this.btnara.Size = new System.Drawing.Size(88, 36);
-            this.btnara.TabIndex = 31;
-            this.btnara.Text = "Ara";
-            // 
-            // btnyenile
-            // 
-            this.btnyenile.BorderRadius = 10;
-            this.btnyenile.BorderThickness = 3;
-            this.btnyenile.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnyenile.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnyenile.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnyenile.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnyenile.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnyenile.FillColor = System.Drawing.Color.MintCream;
-            this.btnyenile.FillColor2 = System.Drawing.Color.Snow;
-            this.btnyenile.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.btnyenile.ForeColor = System.Drawing.Color.Black;
-            this.btnyenile.Location = new System.Drawing.Point(1150, 162);
-            this.btnyenile.Name = "btnyenile";
-            this.btnyenile.Size = new System.Drawing.Size(88, 36);
-            this.btnyenile.TabIndex = 32;
-            this.btnyenile.Text = "Yenile";
+            this.txtara.TextChanged += new System.EventHandler(this.txtara_TextChanged);
             // 
             // HastaKayıt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 597);
-            this.Controls.Add(this.btnyenile);
-            this.Controls.Add(this.btnara);
             this.Controls.Add(this.txtara);
             this.Controls.Add(this.guna2DataGridView1);
             this.Controls.Add(this.btnsil);
@@ -543,7 +502,5 @@
         private Guna.UI2.WinForms.Guna2GradientButton btnsil;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private Guna.UI2.WinForms.Guna2TextBox txtara;
-        private Guna.UI2.WinForms.Guna2GradientButton btnara;
-        private Guna.UI2.WinForms.Guna2GradientButton btnyenile;
     }
 }

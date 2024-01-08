@@ -87,6 +87,7 @@
     <Compile Include="RandevuPanel.Designer.cs">
       <DependentUpon>RandevuPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="recete.cs" />
     <Compile Include="RecetePanel.cs">
       <SubType>Form</SubType>
     </Compile>

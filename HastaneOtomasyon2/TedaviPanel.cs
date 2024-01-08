@@ -23,7 +23,13 @@ namespace HastaneOtomasyon2
             uyeler();
             Reset();
         }
-
+        private void filter()
+        {
+            Hastalar hs = new Hastalar();
+            string query = "select * from TedaviTBL where TAd like '%" + guna2TextBox4.Text + "%'";
+            DataSet ds = hs.ShowHasta(query);
+            TedaviDGV.DataSource = ds.Tables[0];
+        }
         private void guna2TextBox2_TextChanged(object sender, EventArgs e)
         {
 
@@ -134,6 +140,16 @@ namespace HastaneOtomasyon2
             HomePage home=new HomePage();
             home.Show();
             this.Hide();
+        }
+
+        private void guna2GradientButton5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox4_TextChanged(object sender, EventArgs e)
+        {
+            filter();
         }
     }
 }

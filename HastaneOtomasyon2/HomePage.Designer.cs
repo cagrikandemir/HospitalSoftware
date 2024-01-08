@@ -72,7 +72,7 @@
             this.guna2GradientButton4.ForeColor = System.Drawing.Color.Black;
             this.guna2GradientButton4.Location = new System.Drawing.Point(1027, 55);
             this.guna2GradientButton4.Name = "guna2GradientButton4";
-            this.guna2GradientButton4.Size = new System.Drawing.Size(169, 44);
+            this.guna2GradientButton4.Size = new System.Drawing.Size(181, 44);
             this.guna2GradientButton4.TabIndex = 6;
             this.guna2GradientButton4.Text = "Reçete";
             this.guna2GradientButton4.Click += new System.EventHandler(this.guna2GradientButton4_Click);
@@ -93,7 +93,7 @@
             this.guna2GradientButton3.ForeColor = System.Drawing.Color.Black;
             this.guna2GradientButton3.Location = new System.Drawing.Point(841, 55);
             this.guna2GradientButton3.Name = "guna2GradientButton3";
-            this.guna2GradientButton3.Size = new System.Drawing.Size(169, 44);
+            this.guna2GradientButton3.Size = new System.Drawing.Size(181, 44);
             this.guna2GradientButton3.TabIndex = 7;
             this.guna2GradientButton3.Text = "Tedavi";
             this.guna2GradientButton3.UseTransparentBackground = true;
@@ -114,13 +114,14 @@
             this.guna2GradientButton2.ForeColor = System.Drawing.Color.Black;
             this.guna2GradientButton2.Location = new System.Drawing.Point(655, 55);
             this.guna2GradientButton2.Name = "guna2GradientButton2";
-            this.guna2GradientButton2.Size = new System.Drawing.Size(169, 44);
+            this.guna2GradientButton2.Size = new System.Drawing.Size(181, 44);
             this.guna2GradientButton2.TabIndex = 6;
             this.guna2GradientButton2.Text = "Randevu";
             this.guna2GradientButton2.Click += new System.EventHandler(this.guna2GradientButton2_Click);
             // 
             // guna2GradientButton1
             // 
+            this.guna2GradientButton1.BackColor = System.Drawing.Color.Transparent;
             this.guna2GradientButton1.BorderRadius = 10;
             this.guna2GradientButton1.BorderThickness = 3;
             this.guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -134,7 +135,7 @@
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.Black;
             this.guna2GradientButton1.Location = new System.Drawing.Point(469, 55);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.Size = new System.Drawing.Size(169, 44);
+            this.guna2GradientButton1.Size = new System.Drawing.Size(181, 44);
             this.guna2GradientButton1.TabIndex = 5;
             this.guna2GradientButton1.Text = "Hasta Kayıt";
             this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);

@@ -57,6 +57,13 @@ namespace HastaneOtomasyon2
             fillTedavi();
             uyeler();
         }
+        private void filter()
+        {
+            Hastalar hs = new Hastalar();
+            string query = "select * from RandevuTBL where Hasta like '%" + guna2TextBox4.Text + "%'";
+            DataSet ds = hs.ShowHasta(query);
+            RandevuDGV.DataSource = ds.Tables[0];
+        }
         void uyeler()
         {
             Hastalar hs = new Hastalar();
@@ -69,7 +76,7 @@ namespace HastaneOtomasyon2
             comboadsoyad.SelectedIndex = -1;
             combotedavi.SelectedIndex = -1;
             datetarih.Text = "";
-            combosaat.SelectedValue = "";
+            combosaat.SelectedIndex = -1;
 
         }
         private void btnkaydet_Click(object sender, EventArgs e)
@@ -166,6 +173,11 @@ namespace HastaneOtomasyon2
             HomePage home = new HomePage();
             home.Show();
             this.Hide();
+        }
+
+        private void guna2TextBox4_TextChanged(object sender, EventArgs e)
+        {
+            filter();
         }
     }
 }

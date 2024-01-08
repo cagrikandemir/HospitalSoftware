@@ -45,14 +45,22 @@ namespace HastaneOtomasyon2
             txtadres.Text = "";
             txttelefon.Text = "";
             txtara.Text = "";
-            combocinsiyet.SelectedItem = " ";
-            combokangrubu.SelectedItem = " ";
+            combocinsiyet.SelectedIndex = -1;
+            combokangrubu.SelectedIndex = -1;
+            datetarih.Text = "";
         }
         private void HastaKayıt_Load(object sender, EventArgs e)
         {
             uyeler();
+            filter();
         }
-
+        private void filter()
+        {
+            Hastalar hs = new Hastalar();
+            string query = "select * from HastaTBL where HAd like '%" + txtara.Text + "%'";
+            DataSet ds=hs.ShowHasta(query);
+            guna2DataGridView1.DataSource = ds.Tables[0];      
+        }
         private void guna2TextBox3_TextChanged(object sender, EventArgs e)
         {
 
@@ -192,6 +200,16 @@ namespace HastaneOtomasyon2
             HomePage home = new HomePage();
             home.Show();
             this.Hide();
+        }
+
+        private void btnara_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtara_TextChanged(object sender, EventArgs e)
+        {
+            filter();
         }
     }
 }
